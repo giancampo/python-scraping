@@ -8,7 +8,7 @@ for item in urls:
     url = item.rstrip("\n")
     page = requests.get(url)
     tree = html.fromstring(page.content)
-    text = tree.xpath('//title')
+    text = tree.xpath('//title/text()')
     results_file.write("%s,%s\n" % (url, text))
     print ("SCRAPING " + url)
     print (text, "\n")
