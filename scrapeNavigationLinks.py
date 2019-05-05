@@ -1,4 +1,4 @@
-# written in Python 3: this could cause issues with earlier versions of Python
+# written in Python 3: This could cause issues with earlier versions of Python
 
 from lxml import html
 import requests
